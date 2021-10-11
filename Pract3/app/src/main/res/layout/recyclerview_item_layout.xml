@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app= "http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin = "5dp"
+    app:cardBackgroundColor="@color/white"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="110sp"
+            android:layout_height="90sp"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            />
+        <TextView
+            android:id="@+id/textView_butName"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Butterfly"
+            app:layout_constraintLeft_toRightOf="@id/imageView"
+            app:layout_constraintTop_toTopOf="@id/imageView"
+            />
+        <TextView
+            android:id="@+id/textView_population"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:text="Population"
+            app:layout_constraintLeft_toRightOf="@id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/textView_butName"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
